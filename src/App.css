@@ -1,90 +1,57 @@
-/* 리스트 카드 몸통 */
-.app-style {
+.App {
+  text-align: center;
+}
+div {
+  box-sizing: border-box;
+}
+.modal {
+  margin-top: 20px;
   padding: 20px;
-  display: flex;
-  gap: 12px;
+  background: #eee;
+  text-align: left;
 }
-/* 리스트 카드 */
-.square-style {
-  width: 250px;
-  height: 150px;
-  border-radius: 20px;
-  color: rgb(93, 39, 0);
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid rgb(93, 39, 0);
-  background-color: burlywood;
-  padding: 15px;
-  flex-direction: column;
+.list {
+  padding-left: 20px;
+  text-align: left;
+  border-bottom: 1px solid grey;
 }
-/* 제목, 내용 입력부분 */
-.header-style {
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  background-color: burlywood;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  color: rgb(93, 39, 0);
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
-/* 제일 위 My to do list */
-.title-style {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  height: 80px;
-  padding-left: 30px;
-  background-color: rgb(93, 39, 0);
+.black-nav {
+  display: flex;
+  background: black;
+  width: 100%;
   color: white;
-  align-items: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 30px;
-  display: flex;
-  justify-content: space-between;
+  padding-left: 20px;
 }
-/* 타이틀부분 오른쪽 구석에 리액트 */
-.react {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-right: 20px;
-  color: pink;
-}
-/* header부분 제목글씨 */
-.jemok {
-  margin-right: 15px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-/* 진행중 글씨*/
-.jinhaeng {
-  font-weight: bold;
-  font-size: 30px;
-  margin-left: 20px;
-  color: rgb(93, 39, 0);
-}
-
-/* 완료 글씨 */
-.wanryo {
-  font-weight: bold;
-  font-size: 30px;
-  margin-left: 20px;
-  color: rgb(93, 39, 0);
-}
-
-/* todo카드의 제목 */
-.todo-title {
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-/* todo카드의 내용 */
-.todo-body {
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
