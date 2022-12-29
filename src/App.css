@@ -1,31 +1,47 @@
 .App {
   text-align: center;
 }
-div {
-  box-sizing: border-box;
+.insertplace {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
-.modal {
-  margin-top: 20px;
-  padding: 20px;
-  background: #eee;
-  text-align: left;
+.title {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-.list {
-  padding-left: 20px;
-  text-align: left;
-  border-bottom: 1px solid grey;
+.app-container {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.cards {
+  color: green;
+  border-radius: 15px;
+  border: 2px solid green;
+  width: 140px;
+  height: 160px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-.black-nav {
-  display: flex;
-  background: black;
-  width: 100%;
-  color: white;
-  padding-left: 20px;
-}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
